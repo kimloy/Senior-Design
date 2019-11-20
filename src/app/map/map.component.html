@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking Lot</title>
+</head>
+
+<body>
+<div class = body-container>
+  <div class = "parking-container">
+
+        <table id = "lot-1" >
+
+          <tr>
+            <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['1'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">
+              1
+            </th>
+
+            <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['2'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">
+              2
+            </th>
+          </tr>
+
+          <tr>
+            <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['3'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">3</th>
+
+            <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['4'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">4</th>
+          </tr>
+
+          <tr>
+            <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['5'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">5</th>
+
+            <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['6'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">6</th>
+          </tr>
+        </table>
+
+
+
+      <table id = "lot-2">
+        <tr>
+          <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['7'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">7</th>
+
+          <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['8'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">8</th>
+        </tr>
+
+        <tr>
+          <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['9'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">9</th>
+
+          <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['10'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">10</th>
+        </tr>
+
+        <tr>
+          <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['11'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">11</th>
+
+          <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['12'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">12</th>
+        </tr>
+      </table>
+
+    <table id = "lot-3" >
+
+      <tr>
+        <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['13'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">
+          13
+        </th>
+
+        <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['14'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">
+          14
+        </th>
+      </tr>
+
+      <tr>
+        <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['15'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">15</th>
+
+        <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['16'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">16</th>
+      </tr>
+
+      <tr>
+        <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['17'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">17</th>
+
+        <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['18'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">18</th>
+      </tr>
+    </table>
+
+
+
+    <table id = "lot-4">
+      <tr>
+        <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['19'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">19</th>
+
+        <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['20'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">20</th>
+      </tr>
+
+      <tr>
+        <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['21'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">21</th>
+
+        <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['22'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">22</th>
+      </tr>
+
+      <tr>
+        <th class = "parking-spot-left" *ngFor= "let spot of maps | filterSpot: ['23'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">23</th>
+
+        <th class = "parking-spot-right" *ngFor= "let spot of maps | filterSpot: ['24'];" [ngClass]="{
+            occupy: spot.status > 0,
+            available: spot.status < 1
+            }">24</th>
+      </tr>
+    </table>
+
+    <table id = "lot-rev">
+      <tr>
+        <th>r1</th>
+        <th>r2</th>
+        <th>r3</th>
+        <th>r4</th>
+        <th>r5</th>
+        <th>r6</th>
+        <th>r7</th>
+        <th>r8</th>
+      </tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
