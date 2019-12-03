@@ -29,7 +29,7 @@ export class MapComponent implements OnInit, OnDestroy {
         console.log(this.maps);
       });
 
-    this.pusherService.channel.bind('replaced', data => {
+    this.pusherService.channel.bind('update', data => {
       data.new = true;
       const updateSpot = this.maps.find(maps => maps.id === data.id);
       const index = this.maps.indexOf(updateSpot);

@@ -7,8 +7,6 @@ const app = express();
 const Map = require('./models/map');
 
 
-
-
 mongoose.connect('mongodb+srv://kimloy:nccBQM01yxyxThuS@senior-design-rmyr5.mongodb.net/ParkingLots?retryWrites=true&w=majority',{ useNewUrlParser: true })
 .then(()=>{
     console.log('Connected to database');
@@ -54,13 +52,13 @@ app.get("/api/maps", (req, res, next) => {
 });
 
 
-  Map.watch().
+  Map.watch({ fullDocument: 'updateLookup' }).
   on('change', (change) => {
     console.log(change);
     const spot = change.fullDocument;
     pusher.trigger(
       'my-channel',
-      'replaced',
+      'update',
       {
         id: spot._id,
         spotId: spot.spotId,
